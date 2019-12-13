@@ -67,5 +67,3 @@ Now you should be redirected to the App Settings -
 ## Legal
 
 &copy; 2019 LinkedIn
-
-test
