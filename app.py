@@ -80,7 +80,7 @@ def process_message():
 
     # Let's react only when a new Pull Requests has been opened.
     if request.headers['X-Github-Event'] == 'pull_request' and str(webhook.action).lower() == 'opened':
-        # This webhooks has this schema - https://developer.github.com/v3/activity/events/types/#pullrequestevent
+        log.info("You received a pull request:" request)
         add_pr_comment(webhook)
     if request.headers['X-Github-Event'] == 'pull_request' and str(webhook.action).lower() == 'edited':
         # This webhooks has this schema - https://developer.github.com/v3/activity/events/types/#pullrequestevent
